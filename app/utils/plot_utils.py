@@ -119,3 +119,105 @@ def revenue_trend_chart(df: pd.DataFrame, theme: str = "light") -> go.Figure:
         color_discrete_sequence=["#38bdf8"],
     )
     return apply_professional_layout(figure, 360, theme)
+
+
+def best_selling_prediction_chart(prediction_df: pd.DataFrame, theme: str = "light") -> go.Figure:
+    figure = px.bar(
+        prediction_df.sort_values("predicted_units_next_period", ascending=True),
+        x="predicted_units_next_period",
+        y="product_name",
+        orientation="h",
+        color="predicted_units_next_period",
+        color_continuous_scale=["#dbeafe", "#93c5fd", "#60a5fa", "#2563eb"],
+    )
+    figure = apply_professional_layout(figure, 360, theme)
+    figure.update_layout(coloraxis_showscale=False, yaxis=dict(categoryorder="total ascending"))
+    return figure
+
+
+def performance_worm_chart(df: pd.DataFrame, theme: str = "light") -> go.Figure:
+    trend = (
+        df.assign(revenue=df["units_sold"] * df.get("unit_price", 0))
+        .groupby("date", as_index=False)
+        .agg(units_sold=("units_sold", "sum"), revenue=("revenue", "sum"))
+        .sort_values("date")
+    )
+    trend["units_ma"] = trend["units_sold"].rolling(7, min_periods=1).mean()
+    trend["revenue_ma"] = trend["revenue"].rolling(7, min_periods=1).mean()
+
+    figure = go.Figure()
+    figure.add_trace(
+        go.Scatter(
+            x=trend["date"],
+            y=trend["units_ma"],
+            name="7-Day Demand Signal",
+            mode="lines",
+            line=dict(color="#2563eb", width=4, shape="spline"),
+            fill="tozeroy",
+            fillcolor="rgba(37,99,235,0.14)",
+        )
+    )
+    figure.add_trace(
+        go.Scatter(
+            x=trend["date"],
+            y=trend["revenue_ma"],
+            name="7-Day Revenue Signal",
+            mode="lines",
+            line=dict(color="#38bdf8", width=3, shape="spline", dash="dot"),
+        )
+    )
+    return apply_professional_layout(figure, 380, theme)
+
+
+def order_status_chart(order_df: pd.DataFrame, theme: str = "light") -> go.Figure:
+    if order_df.empty:
+        empty = go.Figure()
+        return apply_professional_layout(empty, 320, theme)
+    summary = order_df.groupby("status", as_index=False)["order_number"].count().rename(columns={"order_number": "orders"})
+    figure = px.pie(
+        summary,
+        names="status",
+        values="orders",
+        hole=0.6,
+        color="status",
+        color_discrete_map={
+            "New": "#2563eb",
+            "Preparing": "#f59e0b",
+            "Ready": "#38bdf8",
+            "Completed": "#22c55e",
+            "Cancelled": "#ef4444",
+        },
+    )
+    figure.update_traces(textfont_color="#dbeafe" if theme == "dark" else "#16324f")
+    return apply_professional_layout(figure, 320, theme)
+
+
+def finance_overview_chart(finance_df: pd.DataFrame, theme: str = "light") -> go.Figure:
+    figure = go.Figure()
+    figure.add_trace(
+        go.Bar(
+            x=finance_df["business_date"],
+            y=finance_df["gross_sales"],
+            name="Gross Sales",
+            marker_color="#93c5fd",
+        )
+    )
+    figure.add_trace(
+        go.Bar(
+            x=finance_df["business_date"],
+            y=finance_df["discounts"],
+            name="Discounts",
+            marker_color="#f59e0b",
+        )
+    )
+    figure.add_trace(
+        go.Scatter(
+            x=finance_df["business_date"],
+            y=finance_df["net_sales"],
+            name="Net Sales",
+            mode="lines+markers",
+            line=dict(color="#1d4ed8", width=3),
+        )
+    )
+    figure.update_layout(barmode="group")
+    return apply_professional_layout(figure, 360, theme)

@@ -40,3 +40,28 @@ def forecast_product_demand(
             return moving_average_forecast(series, forecast_days), "Baseline fallback"
 
     return moving_average_forecast(series, forecast_days), "Baseline"
+
+
+def predict_best_selling_products(
+    df: pd.DataFrame,
+    shop_id: str,
+    forecast_days: int,
+    model_name: str = "baseline",
+    top_n: int = 8,
+) -> pd.DataFrame:
+    products = sorted(df[df["shop_id"] == shop_id]["product_name"].unique())
+    rows = []
+    for product_name in products:
+        forecast_df, model_used = forecast_product_demand(df, shop_id, product_name, forecast_days, model_name)
+        rows.append(
+            {
+                "product_name": product_name,
+                "predicted_units_next_period": round(float(forecast_df["predicted_units_sold"].sum()), 2),
+                "avg_daily_forecast": round(float(forecast_df["predicted_units_sold"].mean()), 2),
+                "model_used": model_used,
+            }
+        )
+    return pd.DataFrame(rows).sort_values(
+        ["predicted_units_next_period", "avg_daily_forecast"],
+        ascending=[False, False],
+    ).head(top_n)

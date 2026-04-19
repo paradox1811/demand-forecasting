@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import io
+import zipfile
 from pathlib import Path
 
 import pandas as pd
@@ -137,6 +139,54 @@ def merge_sales_frames(frames: list[pd.DataFrame]) -> pd.DataFrame:
 
 
 def load_sales_data(source: str | Path) -> pd.DataFrame:
-    df = pd.read_csv(source)
+    source_path = Path(source)
+    suffix = source_path.suffix.lower()
+
+    if suffix == ".csv":
+        df = pd.read_csv(source_path)
+    elif suffix in {".xlsx", ".xls"}:
+        df = pd.read_excel(source_path)
+    elif suffix == ".json":
+        df = pd.read_json(source_path)
+    elif suffix == ".parquet":
+        df = pd.read_parquet(source_path)
+    elif suffix in {".txt", ".tsv"}:
+        df = pd.read_csv(source_path, sep=None, engine="python")
+    else:
+        raise ValueError(f"Unsupported file type: {suffix}")
+
     cleaned, _ = clean_sales_dataframe(df)
     return cleaned
+
+
+def parse_uploaded_file(filename: str, file_bytes: bytes) -> list[tuple[str, pd.DataFrame]]:
+    suffix = Path(filename).suffix.lower()
+
+    if suffix == ".zip":
+        extracted: list[tuple[str, pd.DataFrame]] = []
+        with zipfile.ZipFile(io.BytesIO(file_bytes)) as archive:
+            for member in archive.namelist():
+                member_suffix = Path(member).suffix.lower()
+                if member_suffix not in {".csv", ".xlsx", ".xls", ".json", ".parquet", ".txt", ".tsv"}:
+                    continue
+                extracted.extend(parse_uploaded_file(member, archive.read(member)))
+        if not extracted:
+            raise ValueError("ZIP file did not contain any supported structured data files.")
+        return extracted
+
+    if suffix == ".csv":
+        df = pd.read_csv(io.BytesIO(file_bytes))
+    elif suffix in {".xlsx", ".xls"}:
+        df = pd.read_excel(io.BytesIO(file_bytes))
+    elif suffix == ".json":
+        df = pd.read_json(io.BytesIO(file_bytes))
+    elif suffix == ".parquet":
+        df = pd.read_parquet(io.BytesIO(file_bytes))
+    elif suffix in {".txt", ".tsv"}:
+        df = pd.read_csv(io.BytesIO(file_bytes), sep=None, engine="python")
+    else:
+        raise ValueError(
+            f"Unsupported file type '{suffix}'. Supported formats: CSV, Excel, JSON, Parquet, TXT/TSV, ZIP."
+        )
+
+    return [(filename, df)]
