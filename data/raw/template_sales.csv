@@ -1,0 +1,5 @@
+date,shop_id,product_name,category,units_sold,unit_price,stock_available,is_holiday,festival_season
+2026-04-01,store-example-01,Milk 1L,Dairy,25,110,120,0,0
+2026-04-02,store-example-01,Milk 1L,Dairy,28,110,92,0,0
+2026-04-03,store-example-01,Bread Loaf,Bakery,18,55,80,0,0
+2026-04-04,store-example-01,Bread Loaf,Bakery,21,55,59,0,0

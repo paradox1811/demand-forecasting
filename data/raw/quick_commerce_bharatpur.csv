@@ -1,0 +1,26 @@
+date,shop_id,product_name,category,units_sold,unit_price,stock_available,is_holiday,festival_season
+2026-04-01,bharatpur-express-03,Banana 1 Dozen,Fruits,19,130,95,0,0
+2026-04-02,bharatpur-express-03,Banana 1 Dozen,Fruits,22,130,73,0,0
+2026-04-03,bharatpur-express-03,Banana 1 Dozen,Fruits,24,130,49,0,0
+2026-04-04,bharatpur-express-03,Banana 1 Dozen,Fruits,27,130,120,0,0
+2026-04-05,bharatpur-express-03,Curd 400g,Dairy,17,95,64,0,0
+2026-04-06,bharatpur-express-03,Curd 400g,Dairy,18,95,46,0,0
+2026-04-07,bharatpur-express-03,Curd 400g,Dairy,20,95,98,0,0
+2026-04-08,bharatpur-express-03,Chicken Sausage,Frozen,11,240,55,0,0
+2026-04-09,bharatpur-express-03,Chicken Sausage,Frozen,13,240,42,0,0
+2026-04-10,bharatpur-express-03,Chicken Sausage,Frozen,15,240,27,0,0
+2026-04-11,bharatpur-express-03,Frozen French Fries,Frozen,14,210,80,0,0
+2026-04-12,bharatpur-express-03,Frozen French Fries,Frozen,16,210,64,0,0
+2026-04-13,bharatpur-express-03,Frozen French Fries,Frozen,18,210,46,0,0
+2026-04-14,bharatpur-express-03,Energy Drink 250ml,Beverages,21,120,100,0,0
+2026-04-15,bharatpur-express-03,Energy Drink 250ml,Beverages,24,120,76,0,0
+2026-04-16,bharatpur-express-03,Energy Drink 250ml,Beverages,28,120,48,0,0
+2026-04-17,bharatpur-express-03,Chocolate Cookies,Snacks,16,140,70,0,0
+2026-04-18,bharatpur-express-03,Chocolate Cookies,Snacks,18,140,52,0,0
+2026-04-19,bharatpur-express-03,Chocolate Cookies,Snacks,20,140,32,0,0
+2026-04-20,bharatpur-express-03,Instant Noodles 6 Pack,Snacks,12,125,90,0,0
+2026-04-21,bharatpur-express-03,Instant Noodles 6 Pack,Snacks,14,125,76,0,0
+2026-04-22,bharatpur-express-03,Instant Noodles 6 Pack,Snacks,17,125,59,0,0
+2026-04-23,bharatpur-express-03,Toothpaste 150g,Personal Care,10,145,50,0,0
+2026-04-24,bharatpur-express-03,Toothpaste 150g,Personal Care,11,145,39,0,0
+2026-04-25,bharatpur-express-03,Toothpaste 150g,Personal Care,12,145,27,0,0

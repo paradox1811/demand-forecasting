@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+data/processed/*.csv
+data/db/*.db
+reports/forecast_exports/*.csv
+reports/forecast_exports/*.pdf
+reports/forecast_exports/*.zip
+reports/forecast_exports/dashboard_assets/

@@ -1,0 +1,128 @@
+date,shop_id,product_name,category,units_sold,unit_price,stock_available,is_holiday,festival_season
+2026-03-01,kathmandu-mart-01,Rice 5kg,Grocery,12,780,110,0,0
+2026-03-02,kathmandu-mart-01,Rice 5kg,Grocery,14,780,96,0,0
+2026-03-03,kathmandu-mart-01,Rice 5kg,Grocery,13,780,83,0,0
+2026-03-04,kathmandu-mart-01,Rice 5kg,Grocery,12,780,71,0,0
+2026-03-05,kathmandu-mart-01,Rice 5kg,Grocery,16,780,55,0,0
+2026-03-06,kathmandu-mart-01,Rice 5kg,Grocery,18,780,37,0,0
+2026-03-07,kathmandu-mart-01,Rice 5kg,Grocery,21,780,16,0,0
+2026-03-08,kathmandu-mart-01,Rice 5kg,Grocery,20,780,120,0,0
+2026-03-09,kathmandu-mart-01,Rice 5kg,Grocery,17,780,103,0,0
+2026-03-10,kathmandu-mart-01,Rice 5kg,Grocery,16,780,87,0,0
+2026-03-11,kathmandu-mart-01,Rice 5kg,Grocery,18,780,69,0,0
+2026-03-12,kathmandu-mart-01,Rice 5kg,Grocery,19,780,50,0,0
+2026-03-13,kathmandu-mart-01,Rice 5kg,Grocery,23,780,27,0,0
+2026-03-14,kathmandu-mart-01,Rice 5kg,Grocery,24,780,140,0,1
+2026-03-15,kathmandu-mart-01,Rice 5kg,Grocery,22,780,118,0,1
+2026-03-16,kathmandu-mart-01,Sunflower Oil 1L,Grocery,10,260,80,0,0
+2026-03-17,kathmandu-mart-01,Sunflower Oil 1L,Grocery,9,260,71,0,0
+2026-03-18,kathmandu-mart-01,Sunflower Oil 1L,Grocery,11,260,60,0,0
+2026-03-19,kathmandu-mart-01,Sunflower Oil 1L,Grocery,13,260,47,0,0
+2026-03-20,kathmandu-mart-01,Sunflower Oil 1L,Grocery,14,260,33,0,0
+2026-03-21,kathmandu-mart-01,Sunflower Oil 1L,Grocery,15,260,18,0,0
+2026-03-22,kathmandu-mart-01,Sunflower Oil 1L,Grocery,16,260,100,0,0
+2026-03-23,kathmandu-mart-01,Sunflower Oil 1L,Grocery,14,260,86,0,0
+2026-03-24,kathmandu-mart-01,Sunflower Oil 1L,Grocery,13,260,73,0,0
+2026-03-25,kathmandu-mart-01,Sunflower Oil 1L,Grocery,15,260,58,0,0
+2026-03-26,kathmandu-mart-01,Sunflower Oil 1L,Grocery,17,260,41,0,0
+2026-03-27,kathmandu-mart-01,Sunflower Oil 1L,Grocery,18,260,23,0,0
+2026-03-28,kathmandu-mart-01,Sunflower Oil 1L,Grocery,20,260,120,0,1
+2026-03-01,pokhara-cafe-02,Chicken Momo,Restaurant,34,180,200,0,0
+2026-03-02,pokhara-cafe-02,Chicken Momo,Restaurant,36,180,164,0,0
+2026-03-03,pokhara-cafe-02,Chicken Momo,Restaurant,35,180,129,0,0
+2026-03-04,pokhara-cafe-02,Chicken Momo,Restaurant,38,180,91,0,0
+2026-03-05,pokhara-cafe-02,Chicken Momo,Restaurant,42,180,49,0,0
+2026-03-06,pokhara-cafe-02,Chicken Momo,Restaurant,48,180,180,0,0
+2026-03-07,pokhara-cafe-02,Chicken Momo,Restaurant,54,180,126,0,0
+2026-03-08,pokhara-cafe-02,Chicken Momo,Restaurant,57,180,69,0,0
+2026-03-09,pokhara-cafe-02,Chicken Momo,Restaurant,39,180,30,0,0
+2026-03-10,pokhara-cafe-02,Chicken Momo,Restaurant,41,180,170,0,0
+2026-03-11,pokhara-cafe-02,Chicken Momo,Restaurant,44,180,126,0,0
+2026-03-12,pokhara-cafe-02,Chicken Momo,Restaurant,47,180,79,0,0
+2026-03-13,pokhara-cafe-02,Chicken Momo,Restaurant,50,180,29,0,1
+2026-03-14,pokhara-cafe-02,Chicken Momo,Restaurant,61,180,180,0,1
+2026-03-15,pokhara-cafe-02,Chicken Momo,Restaurant,65,180,115,0,1
+2026-03-16,pokhara-cafe-02,Cold Coffee,Restaurant,18,220,80,0,0
+2026-03-17,pokhara-cafe-02,Cold Coffee,Restaurant,19,220,61,0,0
+2026-03-18,pokhara-cafe-02,Cold Coffee,Restaurant,21,220,40,0,0
+2026-03-19,pokhara-cafe-02,Cold Coffee,Restaurant,24,220,16,0,0
+2026-03-20,pokhara-cafe-02,Cold Coffee,Restaurant,26,220,100,0,0
+2026-03-21,pokhara-cafe-02,Cold Coffee,Restaurant,29,220,71,0,0
+2026-03-22,pokhara-cafe-02,Cold Coffee,Restaurant,31,220,40,0,0
+2026-03-23,pokhara-cafe-02,Cold Coffee,Restaurant,22,220,18,0,0
+2026-03-24,pokhara-cafe-02,Cold Coffee,Restaurant,24,220,90,0,0
+2026-03-25,pokhara-cafe-02,Cold Coffee,Restaurant,26,220,64,0,0
+2026-03-26,pokhara-cafe-02,Cold Coffee,Restaurant,27,220,37,0,0
+2026-03-27,pokhara-cafe-02,Cold Coffee,Restaurant,30,220,120,0,1
+2026-03-28,pokhara-cafe-02,Cold Coffee,Restaurant,33,220,87,0,1
+2026-03-01,kathmandu-mart-01,Milk 1L,Dairy,28,110,140,0,0
+2026-03-02,kathmandu-mart-01,Milk 1L,Dairy,30,110,110,0,0
+2026-03-03,kathmandu-mart-01,Milk 1L,Dairy,27,110,83,0,0
+2026-03-04,kathmandu-mart-01,Milk 1L,Dairy,29,110,54,0,0
+2026-03-05,kathmandu-mart-01,Milk 1L,Dairy,31,110,150,0,0
+2026-03-06,kathmandu-mart-01,Milk 1L,Dairy,36,110,114,0,0
+2026-03-07,kathmandu-mart-01,Milk 1L,Dairy,39,110,75,0,0
+2026-03-08,kathmandu-mart-01,Milk 1L,Dairy,34,110,41,0,0
+2026-03-09,kathmandu-mart-01,Milk 1L,Dairy,32,110,140,0,0
+2026-03-10,kathmandu-mart-01,Milk 1L,Dairy,30,110,110,0,0
+2026-03-11,kathmandu-mart-01,Bread Loaf,Bakery,22,55,100,0,0
+2026-03-12,kathmandu-mart-01,Bread Loaf,Bakery,24,55,76,0,0
+2026-03-13,kathmandu-mart-01,Bread Loaf,Bakery,23,55,53,0,0
+2026-03-14,kathmandu-mart-01,Bread Loaf,Bakery,27,55,26,0,1
+2026-03-15,kathmandu-mart-01,Bread Loaf,Bakery,29,55,100,0,1
+2026-03-16,kathmandu-mart-01,Eggs 30pcs,Dairy,14,420,90,0,0
+2026-03-17,kathmandu-mart-01,Eggs 30pcs,Dairy,13,420,77,0,0
+2026-03-18,kathmandu-mart-01,Eggs 30pcs,Dairy,15,420,62,0,0
+2026-03-19,kathmandu-mart-01,Eggs 30pcs,Dairy,17,420,45,0,0
+2026-03-20,kathmandu-mart-01,Eggs 30pcs,Dairy,16,420,29,0,0
+2026-03-21,kathmandu-mart-01,Eggs 30pcs,Dairy,18,420,120,0,0
+2026-03-22,kathmandu-mart-01,Potato 1kg,Vegetables,40,70,200,0,0
+2026-03-23,kathmandu-mart-01,Potato 1kg,Vegetables,44,70,156,0,0
+2026-03-24,kathmandu-mart-01,Potato 1kg,Vegetables,42,70,114,0,0
+2026-03-25,kathmandu-mart-01,Potato 1kg,Vegetables,46,70,68,0,0
+2026-03-26,kathmandu-mart-01,Potato 1kg,Vegetables,48,70,20,0,0
+2026-03-27,kathmandu-mart-01,Potato 1kg,Vegetables,50,70,180,0,1
+2026-03-28,kathmandu-mart-01,Potato 1kg,Vegetables,54,70,126,0,1
+2026-03-01,kathmandu-mart-01,Tomato 1kg,Vegetables,18,90,120,0,0
+2026-03-02,kathmandu-mart-01,Tomato 1kg,Vegetables,19,90,101,0,0
+2026-03-03,kathmandu-mart-01,Tomato 1kg,Vegetables,21,90,80,0,0
+2026-03-04,kathmandu-mart-01,Tomato 1kg,Vegetables,24,90,56,0,0
+2026-03-05,kathmandu-mart-01,Tomato 1kg,Vegetables,23,90,33,0,0
+2026-03-06,kathmandu-mart-01,Tomato 1kg,Vegetables,26,90,120,0,0
+2026-03-07,kathmandu-mart-01,Tomato 1kg,Vegetables,28,90,92,0,0
+2026-03-08,kathmandu-mart-01,Tomato 1kg,Vegetables,31,90,61,0,0
+2026-03-09,kathmandu-mart-01,Instant Noodles 12 Pack,Snacks,12,240,90,0,0
+2026-03-10,kathmandu-mart-01,Instant Noodles 12 Pack,Snacks,14,240,76,0,0
+2026-03-11,kathmandu-mart-01,Instant Noodles 12 Pack,Snacks,15,240,61,0,0
+2026-03-12,kathmandu-mart-01,Instant Noodles 12 Pack,Snacks,16,240,45,0,0
+2026-03-13,kathmandu-mart-01,Instant Noodles 12 Pack,Snacks,18,240,27,0,0
+2026-03-14,kathmandu-mart-01,Instant Noodles 12 Pack,Snacks,20,240,100,0,1
+2026-03-15,kathmandu-mart-01,Instant Noodles 12 Pack,Snacks,22,240,78,0,1
+2026-03-16,kathmandu-mart-01,Coca Cola 1.25L,Beverages,11,125,84,0,0
+2026-03-17,kathmandu-mart-01,Coca Cola 1.25L,Beverages,12,125,72,0,0
+2026-03-18,kathmandu-mart-01,Coca Cola 1.25L,Beverages,13,125,59,0,0
+2026-03-19,kathmandu-mart-01,Coca Cola 1.25L,Beverages,16,125,43,0,0
+2026-03-20,kathmandu-mart-01,Coca Cola 1.25L,Beverages,18,125,25,0,0
+2026-03-21,kathmandu-mart-01,Coca Cola 1.25L,Beverages,21,125,120,0,0
+2026-03-22,kathmandu-mart-01,Lays Chips 52g,Snacks,17,60,100,0,0
+2026-03-23,kathmandu-mart-01,Lays Chips 52g,Snacks,19,60,81,0,0
+2026-03-24,kathmandu-mart-01,Lays Chips 52g,Snacks,22,60,59,0,0
+2026-03-25,kathmandu-mart-01,Lays Chips 52g,Snacks,24,60,35,0,0
+2026-03-26,kathmandu-mart-01,Lays Chips 52g,Snacks,26,60,120,0,0
+2026-03-27,kathmandu-mart-01,Toilet Cleaner 500ml,Home Care,8,165,60,0,0
+2026-03-28,kathmandu-mart-01,Toilet Cleaner 500ml,Home Care,9,165,51,0,0
+2026-03-01,kathmandu-mart-01,Liquid Detergent 1L,Home Care,7,310,50,0,0
+2026-03-02,kathmandu-mart-01,Liquid Detergent 1L,Home Care,8,310,42,0,0
+2026-03-03,kathmandu-mart-01,Liquid Detergent 1L,Home Care,9,310,33,0,0
+2026-03-04,kathmandu-mart-01,Liquid Detergent 1L,Home Care,8,310,25,0,0
+2026-03-05,kathmandu-mart-01,Liquid Detergent 1L,Home Care,10,310,70,0,0
+2026-03-06,kathmandu-mart-01,Shampoo 180ml,Personal Care,9,260,70,0,0
+2026-03-07,kathmandu-mart-01,Shampoo 180ml,Personal Care,10,260,60,0,0
+2026-03-08,kathmandu-mart-01,Shampoo 180ml,Personal Care,11,260,49,0,0
+2026-03-09,kathmandu-mart-01,Shampoo 180ml,Personal Care,12,260,37,0,0
+2026-03-10,kathmandu-mart-01,Shampoo 180ml,Personal Care,13,260,24,0,0
+2026-03-11,kathmandu-mart-01,Shampoo 180ml,Personal Care,14,260,90,0,0
+2026-03-12,kathmandu-mart-01,Baby Diapers Small,Baby Care,6,520,40,0,0
+2026-03-13,kathmandu-mart-01,Baby Diapers Small,Baby Care,7,520,33,0,0
+2026-03-14,kathmandu-mart-01,Baby Diapers Small,Baby Care,8,520,25,0,1
+2026-03-15,kathmandu-mart-01,Baby Diapers Small,Baby Care,9,520,60,0,1
