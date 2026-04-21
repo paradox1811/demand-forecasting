@@ -584,12 +584,12 @@ def render_customer_menu(shop_id: str) -> None:
                 min_value=0, max_value=20, value=0, step=1,
             )
             if quantity > 0:
-                chosen_items.append({{
+                chosen_items.append({
                     "item_name": row["item_name"],
                     "category": row["category"],
                     "quantity": int(quantity),
                     "price": float(row["price"])
-                }})
+                })
         
         st.markdown("### 💳 Payment Method")
         payment_method = st.radio("Pay via", options=["Cash on Delivery", "eSewa", "Khalti", "FonePay"], horizontal=True)
